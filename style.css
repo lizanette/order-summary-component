@@ -1,0 +1,141 @@
+body {
+    align-items: center;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    flex-direction: column;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 500;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 10px;
+    padding: 15px 85px;
+}
+
+.container{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px hsl(228, 45%, 44%, 0.15);
+    margin: 20px;
+    padding-bottom: 20px; 
+}
+
+.top-image {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+
+h1 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+h4 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+p {
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+a {
+    color: hsl(245, 75%, 52%);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.description {
+    padding: 0 30px;
+}
+.pattern {
+    background: url(images/pattern-background-mobile.svg) no-repeat center/cover;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.btn-primary {
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 0 20px 15px hsl(225, 100%, 94%);
+    color: white;
+}
+
+.btn-primary:hover, a:hover {
+    opacity: 0.6;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: hsl(224, 23%, 55%);
+    
+}
+
+.btn-secondary:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+.buttons {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.plan {
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 10px;
+    width: 80%;
+}
+
+.plan article {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.plan article img {
+    margin-right: 25px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+    .pattern {
+        background: url(images/pattern-background-desktop.svg) no-repeat center/cover;
+        height: 50vh;
+    }
+
+    .container {
+        width: 400px;
+    }
+
+}
